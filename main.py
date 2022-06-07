@@ -32,6 +32,19 @@ def get_word_definition(word):
         return False
 
 
+def cleaning_data(data):
+    if len(data) == 1:
+        return data
+
+    clean = {}
+    for i in data:
+        if i in clean:
+            clean[i].append(data[i])
+        else:
+            clean[i] = [data[i]]
+    return clean
+
+
 if __name__ == "__main__":
     new_word = get_new_word()
     data = get_word_definition(new_word)
@@ -41,4 +54,5 @@ if __name__ == "__main__":
         data = get_word_definition(new_word)
 
     print(new_word)
-    print(data)
+    print(cleaning_data(data))
+
