@@ -1,5 +1,7 @@
 # random-word-everyday-bots
 
-<h1>
+<h3>
 	just a simple word bots who uploads random words and definitions everyday
-</h1>
+</h3>
+
+<b> Created by : Kelpie </b>
